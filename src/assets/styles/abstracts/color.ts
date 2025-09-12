@@ -1,0 +1,54 @@
+const colors = {
+    main_bg_color: 'white',
+    liColor: '#414D44',
+    activeLiColor: 'rgba(255, 255, 255, 0.6)',
+    borderBottom:'#ecf1e6',
+    descriptionColor:'#707872',
+    active_li_color_with_opacity: 'rgba(62, 111, 0, 0.02)',
+    footer_color_with_opacity: 'rgba(62, 111, 0, 0.04)',
+    partner_color_with_opacity: 'rgba(62, 111, 0, 0.04)',
+    amountColor: '#404D43',
+    footer_copy_right_color: '#6F6C90',
+    headerNavBg: '#0D121C',
+    secondBg:'#fbfcfa',
+    textGrayColor8: '#202939',
+    textGrayColor5: '#697586',
+    mainBg: '#edeef1',
+    mainGreen: '#00b04e',
+    btnBgColor: '#1890ff',
+    searchInputBorder: '#B3B3B3',
+    light: '#fafafa',
+    white: '#fff',
+    dark: '#030305',
+    bg: '#f1f2f3',
+    text: '#3b3f5c',
+    border: '#d7e0ea',
+    icon: '#506690',
+    black: '#000',
+    txtLight: '#515365',
+    txtBlue: '#4361ee',
+    txtGray: '#F8FAFC',
+//tab
+    tab: '#805DCA',
+    tabBorderBottom: 'lightgrey',
+
+//button
+    buttonTextColor: '#fff',
+    primaryButtonColor: '#4361ee',
+    infoButtonColor: '#2196f3',
+    successButtonColor: '#1abc9c',
+    warningButtonColor: '#e2a03f',
+    dangerButtonColor: '#e7515a',
+    darkButtonColor: '#3b3f5c', ButtonColor: '#f1f2f3',
+    mainButtonTextColor: '#3b3f5c',
+    secondaryButtonColor: '#805dca', BackgroundColor: '#c6c6c6',
+
+//pagination
+    paginationColor: '#2B455F',
+//loading
+    loadingBackdropBgColor: 'rgba(0,0,0,0.3)',
+    main: '#4361ee',
+
+};
+
+export default colors;
