@@ -1,10 +1,9 @@
-export interface IAboutUsVideo {
-    id: number;
-    file: IFileModel;
+export interface IActivitiesList {
+    title: string;
     description: string;
-    alt: string;
 }
-export interface IFileModel {
-    id: number;
-    url: string;
+
+export interface IRightContentList {
+    image: string;
+    description: string;
 }
