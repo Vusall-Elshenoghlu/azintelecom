@@ -4,6 +4,7 @@ import HomeComponent from 'pages/home/home.component';
 import {Routes} from './routes';
 import NotFound from 'pages/not-found/notfound.component';
 import NewsComponent from '../pages/news/news.component';
+import AboutComponent from '../pages/about/about.component';
 
 const router = createBrowserRouter([
     {
@@ -13,9 +14,13 @@ const router = createBrowserRouter([
                 path: Routes.home,
                 element: <HomeComponent/>,
             },
- {
+            {
                 path: Routes.news,
                 element: <NewsComponent/>,
+            },
+            {
+                path: Routes.about,
+                element: <AboutComponent/>,
             },
 
 

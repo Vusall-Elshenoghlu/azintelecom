@@ -14,18 +14,6 @@ const styles = {
         backgroundImage: `url(${background})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
-        '& h5': {
-            fontWeight: '400',
-            fontSize: rem(18),
-            lineHeight: rem(28),
-            letterSpacing: rem(0),
-            horizontalAlignment: 'right',
-            verticalAlignment: 'middle',
-            background: 'radial-gradient(278.27% 278.27% at -178.27% 100%, #111111 0%, #A5A5A5 100%)',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
-            marginLeft: rem(300),
-        }
     },
     row: {
         display: 'flex',

@@ -4,6 +4,6 @@ export interface IActivitiesList {
 }
 
 export interface IRightContentList {
-    image: string;
+    image: string | JSX.Element;
     description: string;
 }

@@ -129,40 +129,6 @@ const styles = {
         bottom: 90,
     },
 
-    lineAndText: {
-        marginTop: rem(30),
-        marginLeft: rem(50),
-        display: 'flex',
-        alignItems: 'center',
-        gap: rem(30),
-        '& h3': {
-            fontSize: rem(24),
-            fontWeight: '400',
-            lineHeight: rem(32),
-            background: 'radial-gradient(50% 50% at 50% 59.37%, #090909 0%, #616161 100%)',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
-            [breakpoint(breakpoints.tabletM)]: {
-                fontSize: rem(14),
-            },
-        },
-        [breakpoint(breakpoints.tabletM)]: {
-            marginLeft: rem(20),
-            marginTop: rem(-20),
-            gap: rem(10),
-
-        }
-    },
-
-    line: {
-        height: rem(0),
-        width: rem(130),
-        border: `${rem(1)} solid ${colors.border}`,
-        [breakpoint(breakpoints.tabletM)]: {
-            width: rem(40)
-        }
-    },
-
     titleWithIcon: {
         display: 'flex',
         alignItems: 'center',

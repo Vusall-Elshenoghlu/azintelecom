@@ -19,7 +19,7 @@ export const az = {
     // Hero Section
     home_hero_title_one: 'Qürur duyulacaq',
     home_hero_title_two: 'RƏQƏMSAL GƏLƏCƏYİ',
-    home_hero_title_three: 'birlikdə quraq',
+    home_hero_title_three: 'birlikdə quraq!',
     home_hero_aboutBtn: 'About NICART',
     // Activities
     home_activities_title: 'Fəaliyyət istiqamətlərimiz',
@@ -42,6 +42,17 @@ export const az = {
 
 
 
+
+    //About
+    //Achievements
+    about_achievements_title: 'Nailiyyətlərimiz',
+    about_achievements_description: 'We believe in the future where\n' +
+        'technology leads',
+    about_azintelecom_paragraph: 'Azərbaycan Respublikasının Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi tabeliyində fəaliyyət göstərən “AzInTelecom” MMC-nin geniş spektri əhatə edən xidmətləri var. Rəqəmsal dünyada keyfiyyətə üstünlük verənlərə təhlükəsiz, etibarlı və uyğunlaşa bilən xidmətlər təqdim etməyi özünə hədəf seçən “AzInTelecom” MMC (Azerbaijan International Telecom) şirkət strategiyasını insana dəyər, etibarlılıq, innovativlik, çeviklik, şəffaflıq və məxfiliyin qorunması kimi fundamental dəyərlər ətrafında formalaşdırıb. “AzInTelecom” MMC-nin fəaliyyət istiqamətləri bulud həlləri, Azərbaycan və xarici ölkələr arasında mübadilə olunan Beynəlxalq səs trafiki, Biznes həlləri, İnformasiya Təhlükəsizliyi xidmətləri, SİMA rəqəmsal həllər platforması və Mərkəzləşdirilmiş informasiya sistemlərindən ibarətdir.',
+
+    //Azintelecom
+    about_azintelecom_title: 'Azintelecom MMC',
+    about_azintelecom_description: 'Rəqəmsal gələcəyi birlikdə quraq',
     //Footer
 
     footer_logo_alt: 'Footer logo',

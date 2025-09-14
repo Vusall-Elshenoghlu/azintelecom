@@ -1,8 +1,6 @@
 import {createUseStyles} from 'react-jss';
 import {rem} from '../../../../assets/styles/abstracts/functions';
-// import colors from '../../../../assets/styles/abstracts/color';
-// import {breakpoint} from '../../../../assets/styles/abstracts/mixins';
-// import {breakpoints} from '../../../../assets/styles/abstracts/sizes';
+import colors from '../../../../assets/styles/abstracts/color';
 import backgroundImage from '../../../../assets/images/statics/background.jpg';
 import {breakpoint} from '../../../../assets/styles/abstracts/mixins';
 import {breakpoints} from '../../../../assets/styles/abstracts/sizes';
@@ -18,7 +16,7 @@ const styles = {
         backgroundSize: 'cover',
         display: 'flex',
         [breakpoint(breakpoints.tabletM)]: {
-            height: rem(768),
+            height: rem(558),
         }
     },
     rows: {
@@ -40,11 +38,26 @@ const styles = {
             fontWeight: '800',
         },
         [breakpoint(breakpoints.tabletM)]: {
-            marginTop: rem(250),
+            marginTop: rem(-100),
             fontSize: rem(24),
             lineHeight: rem(40),
         }
-    }
+    },
+    spline: {
+        width: rem(1000),
+        display: 'flex',
+        height: rem(600),
+        marginLeft: rem(-650),
+        marginTop: rem(-200),
+        overflow: 'hidden !important',
+        [breakpoint(breakpoints.tabletM)]: {
+            marginTop: rem(-350),
+            marginLeft: rem(-625),
+
+        }
+
+    },
+
 
 };
 

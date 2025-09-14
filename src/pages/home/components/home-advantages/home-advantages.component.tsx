@@ -36,24 +36,14 @@ const HomeAdvantagesComponent = () => {
     return (
         <div className={classes.wrapper}>
             <div className={'container pt-100'}>
-                <div className={'row'}>
-                    <div className={'col-lg-6 col-md-6 col-sm-12'}>
-                        <TitleOfSectionComponent>
-                            {translate('home_advantages_title')}
-                        </TitleOfSectionComponent>
-                    </div>
-                    <div className={'col-lg-6 col-md-6 col-sm-12'}>
-                        <h5>{translate('home_advantages_description')}</h5>
-                    </div>
-
-                </div>
+                <TitleOfSectionComponent title={translate('home_advantages_title')} description={translate('home_advantages_description')} />
             </div>
             <div className={'container-fluid mt-50'}>
                 <div className={`${classes.row}`}>
                     {
                         advantagesList.map((advantage, index) => (
                                 <div className={classes.card}>
-                                    <img src={advantage.icon} alt={index}/>
+                                    <img src={advantage.icon} alt={advantage.description}/>
                                     <h1>{advantage.title}</h1>
                                     <p>{advantage.description}</p>
                                 </div>

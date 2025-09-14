@@ -44,20 +44,7 @@ const HomeOurActivitiesComponent = () => {
     return (
         <div className={classes.wrapper}>
             <div className={'container'}>
-                <div className={'row'}>
-                   <div className={'col-lg-5 col-md-6 col-sm-12'}>
-                       <TitleOfSectionComponent>
-                           {translate('home_activities_title')}
-                       </TitleOfSectionComponent>
-                   </div>
-                    <div className={'col-lg-7 col-md-6 col-sm-12 mt-30'}>
-                        <div className={classes.lineAndText}>
-                            <div className={classes.line}></div>
-                            <h3>{translate('home_activites_heading')}</h3>
-                        </div>
-                   </div>
-
-                </div>
+                <TitleOfSectionComponent line title={translate('home_activities_title')} description={translate('home_activites_heading')}/>
                 <div className={'row'}>
                     <div className={'col-lg-5 col-md-6 col-sm-12'}>
                         <div className={classes.leftDiv}>

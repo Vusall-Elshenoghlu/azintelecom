@@ -1,7 +1,8 @@
 import fonts from '../abstracts/fonts';
 import colors from '../abstracts/color';
-import sizes from '../abstracts/sizes';
+import sizes, {breakpoints} from '../abstracts/sizes';
 import {rem} from '../abstracts/functions';
+import {breakpoint} from '../abstracts/mixins';
 
 const commonStyles = {
     '@global': {
@@ -14,6 +15,9 @@ const commonStyles = {
             margin: 0,
             backgroundColor: colors.headerNavBg,
             padding:rem(15),
+            [breakpoint(breakpoints.tabletM)]: {
+                padding: rem(0),
+            }
         },
         a: {textDecoration: 'none', '&:hover': {color: 'black',},},
         img: {maxWidth: '100%',},
