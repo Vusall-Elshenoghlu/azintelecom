@@ -6,10 +6,34 @@ import useLocalization from '../../../../assets/lang';
 const AboutAchivementsComponent = () => {
     const classes = useAboutAchivementStyles();
     const translate = useLocalization();
+    const ballonList = [
+        {
+            id: 1,
+            title: translate('about_achievements_sponsor'),
+            count: translate('about_achievements_sponsor_count')
+        },
+        {
+            id: 2,
+            title: translate('about_achievements_area'),
+            count: translate('about_achievements_area_count')
+        },
+        {
+            id: 3,
+            title: translate('about_achievements_specialist'),
+            count: translate('about_achievements_specialist_count')
+        },
+        {
+            id: 4,
+            title: translate('about_achievements_sertificates'),
+            count: translate('about_achievements_sertificates_count')
+        },
+
+    ];
     return (
         <div className={classes.wrapper}>
             <div className='fixed inset-0 z-0'>
-                <Spline className={classes.spline} scene='https://prod.spline.design/xEov8w9BUQbdNLU3/scene.splinecode'/>
+                <Spline className={classes.spline}
+                        scene='https://prod.spline.design/xEov8w9BUQbdNLU3/scene.splinecode'/>
             </div>
             <div className={classes.mainDiv}>
                 <div className={'container'}>
@@ -25,18 +49,14 @@ const AboutAchivementsComponent = () => {
                         </div>
                     </div>
                     <div className={classes.ballons}>
-                        {/*<div className={classes.ballonOne}>*/}
-
-                        {/*</div>*/}
-                        {/*<div className={classes.ballonTwo}>*/}
-
-                        {/*</div>*/}
-                        {/*<div className={classes.ballonThree}>*/}
-
-                        {/*</div>*/}
-                        {/*<div className={classes.ballonFour}>*/}
-
-                        {/*</div>*/}
+                        {
+                            ballonList.map((ballon, index) => (
+                                <div className={`${classes.ballon} ${classes['ballon' + ballon.id]}`} key={ballon.id}>
+                                    <h1>{ballon.count}</h1>
+                                    <p>{ballon.title}</p>
+                                </div>
+                            ))
+                        }
 
                     </div>
                 </div>

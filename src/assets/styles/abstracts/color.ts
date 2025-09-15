@@ -14,6 +14,8 @@ const colors = {
     textGrayColor8: '#202939',
     textGrayColor5: '#697586',
     textGrayColor7: '#364152',
+    modernBlue1: '#D0E2FF',
+    modernBlue5: '#0F62FE',
     mainBg: '#edeef1',
     mainGreen: '#00b04e',
     btnBgColor: '#1890ff',

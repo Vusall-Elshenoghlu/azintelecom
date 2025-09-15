@@ -1,7 +1,7 @@
 import {createUseStyles} from 'react-jss';
 import {rem} from '../../../../assets/styles/abstracts/functions';
 import colors from '../../../../assets/styles/abstracts/color';
-import {breakpoint} from '../../../../assets/styles/abstracts/mixins';
+import {breakpoint, transition} from '../../../../assets/styles/abstracts/mixins';
 import {breakpoints} from '../../../../assets/styles/abstracts/sizes';
 import gridImage from '../../../../assets/images/statics/grid.png';
 import gridPhoneImage from '../../../../assets/images/statics/grid-mobile.png';
@@ -45,7 +45,7 @@ const styles = {
         backgroundColor: colors.txtGray,
         borderLeft: '4px solid #1570EF',
         padding: '24px 32px 24px 32px',
-        transition: 'all 0.5s ease',
+        transition: transition('all', 0.5, 'ease'),
         cursor: 'pointer',
         zIndex: 10,
         position: 'relative',

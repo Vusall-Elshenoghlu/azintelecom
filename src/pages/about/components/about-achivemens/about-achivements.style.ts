@@ -82,10 +82,39 @@ const styles = {
         }
     },
     ballons: {
-        marginTop: rem(60),
+        marginTop: rem(160),
         width: '100%',
         height: '100%',
-        backgroundColor: 'red !important',
+        display: 'flex',
+        gap: rem(25),
+    },
+    ballon: {
+        width: rem(290),
+        height: rem(290),
+        borderRadius: '100%',
+        backgroundColor: colors.modernBlue5,
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'column',
+        color: colors.white,
+        '& h1': {
+            fontWeight: '700',
+            fontSize: rem(35),
+            lineHeight: rem(43),
+            letterSpacing: '-2%',
+        },
+        '& p': {
+            fontWeight: '400',
+            fontSize: rem(17),
+            lineHeight: rem(26),
+            letterSpacing: '0',
+            color: colors.white,
+            opacity: '0.8'
+        },
+        ballon1: {
+            backgroundColor: 'red !important',
+        }
     }
 };
 export const useAboutAchivementStyles = createUseStyles(styles);
