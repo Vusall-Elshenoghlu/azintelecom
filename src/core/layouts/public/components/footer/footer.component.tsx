@@ -11,6 +11,8 @@ import {
 } from '../../../../../assets/images/icons/arrows';
 import {Link} from 'react-router-dom';
 import {Routes} from '../../../../../router/routes';
+import FooterUsefulLinksComponent from './components/footer-useful-links/footer-useful-links.component';
+import FooterProudComponent from './components/footer-proud/footer-proud.component';
 
 const FooterComponent = () => {
     // const classes = useFooterStyles();
@@ -106,7 +108,8 @@ const FooterComponent = () => {
     //     </footer>
     return (
         <>
-            salam
+            <FooterUsefulLinksComponent/>
+            <FooterProudComponent/>
         </>
     );
 };

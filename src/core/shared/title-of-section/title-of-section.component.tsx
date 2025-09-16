@@ -1,16 +1,11 @@
 import {useTitleOfSectionStyles} from './title-of-section.style';
-import {ReactNode} from 'react';
 import {TitleOfSectionProps} from './title-of-section';
-import useLocalization from '../../../assets/lang';
 
-interface Props {
-    children: ReactNode;
-}
 
 const TitleOfSectionComponent = ({title, description, line, children}: TitleOfSectionProps) => {
     const classes = useTitleOfSectionStyles();
     return (
-        <div className={'row'}>
+        <div className={`row ${classes.row}`}>
             <div className={line ? 'col-lg-5 col-md-6 col-sm-12' : 'col-lg-6 col-md-6 col-sm-12'}>
                 <h1 className={classes.activitiesText}>{title}</h1>
             </div>

@@ -14,6 +14,11 @@ const colors = {
     textGrayColor8: '#202939',
     textGrayColor5: '#697586',
     textGrayColor7: '#364152',
+    textGrayColor4: '#9AA4B2',
+    textGrayColor3: '#CDD5DF',
+    textGrayColor9: '#121926',
+    textGrayColor1: '#EEF2F6',
+    textGrayColor2: '#E3E8EF',
     modernBlue1: '#D0E2FF',
     modernBlue5: '#0F62FE',
     mainBg: '#edeef1',
@@ -47,7 +52,7 @@ const colors = {
     secondaryButtonColor: '#805dca', BackgroundColor: '#c6c6c6',
 
 //pagination
-    paginationColor: '#2B455F',
+    paginationColor: '#FFFFFF33',
 //loading
     loadingBackdropBgColor: 'rgba(0,0,0,0.3)',
     main: '#4361ee',

@@ -54,3 +54,19 @@ export const BlogIcon = () => {
         </svg>
     );
 };
+export const HomeMenuIcon = () => {
+    return (
+        <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M12.1359 14.5769H6.86294C6.44894 14.5769 6.11294 14.2409 6.11294 13.8269C6.11294 13.4129 6.44894 13.0769 6.86294 13.0769H12.1359C12.5499 13.0769 12.8859 13.4129 12.8859 13.8269C12.8859 14.2409 12.5499 14.5769 12.1359 14.5769ZM17.4179 5.62493L11.8439 1.08593C10.4839 -0.0240701 8.51092 -0.0250703 7.15294 1.08493L1.58094 5.62393C0.709938 6.32993 0.210938 7.37693 0.210938 8.4969V15.6769C0.210938 17.9209 2.03694 19.7469 4.28294 19.7469H14.7139C16.9589 19.7469 18.7859 17.9209 18.7859 15.6769V8.4969C18.7859 7.37693 18.2869 6.32993 17.4179 5.62493Z"
+                  fill="#9AA4B2"/>
+        </svg>
+    );
+};
+export const SmallLeftIcon = () => {
+    return (
+        <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 11L6 6L1 1" stroke="#9AA4B2" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    );
+};

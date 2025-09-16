@@ -3,7 +3,7 @@ import colors from '../abstracts/color';
 import sizes, {breakpoints} from '../abstracts/sizes';
 import {rem} from '../abstracts/functions';
 import {breakpoint} from '../abstracts/mixins';
-
+import background from '../../images/statics/about-missions-bacground.png';
 const commonStyles = {
     '@global': {
         html: {
@@ -14,6 +14,12 @@ const commonStyles = {
             fontWeight: 400,
             margin: 0,
             backgroundColor: colors.headerNavBg,
+            backgroundImage: `url(${background})`,
+            width: '100%',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            backgroundAttachment: 'fixed',
+            minHeight: '100vh',
             padding:rem(15),
             [breakpoint(breakpoints.tabletM)]: {
                 padding: rem(0),

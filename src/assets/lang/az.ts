@@ -44,6 +44,9 @@ export const az = {
 
 
     //About
+    //Main
+    about_main_title: 'Şirkət haqqında',
+    about_main_description: 'Qürur duyulacaq RƏQƏMSAL GƏLƏCƏYİ birlikdə quraq',
     //Achievements
     about_achievements_title: 'Nailiyyətlərimiz',
     about_achievements_description: 'We believe in the future where\n' +
@@ -74,6 +77,20 @@ export const az = {
     about_structure_team_employer3_prof: 'Director of Finance Department',
     about_structure_team_employer4: 'Renat Rustamov',
     about_structure_team_employer4_prof: 'Director of Human Capital Manegement',
+
+    //AboutMission
+    about_mission_title1: 'Missiyamız',
+    about_mission_description1: 'Rəqəmsal dünyada keyfiyyətə üstünlük verənlərə təhlükəsiz, etibarlı və uyğunlaşa bilən data xidmətləri təqdim etmək.',
+    about_mission_title2: 'Baxışımız',
+    about_mission_description2: 'Müştərilərə öz əsas işlərilə məşğul olmağa imkan verən regional rəqəmsal həllər provayderi olmaq.',
+    about_mission_proud: 'Qürur duyulacaq rəqəmsal gələcəyi birlikdə quraq!',
+
+    //AboutPrioritets
+    about_prioriets_title: 'Prioritetlər',
+    about_prioriets_description: 'Azerbaijan International Telecom',
+    about_prioriets_number: '01',
+    about_prioriets_fact: 'FAKT',
+    about_prioriets_fact_desc: 'IER III, ISO 20000, ISO 22301 və ISO 27001 sertifikatlı əlçatanlıq zonalarında 24/7 rejimində texniki dəstəyin göstərilməsi.',
     //Footer
 
     footer_logo_alt: 'Footer logo',
@@ -93,4 +110,9 @@ export const az = {
     footer_all_rights: 'All Rights Reserved',
     footer_terms: 'Terms and Conditions',
     footer_privacy: 'Privacy Policy',
+
+
+    //FooterUsefulLinks
+    footer_useful_title: 'Faydalı linklər',
+    footer_proud_title: `Qürur duyulacaq \n rəqəmsal gələcəyi birlikdə quraq`,
 };

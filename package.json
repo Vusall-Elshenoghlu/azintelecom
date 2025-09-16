@@ -33,6 +33,7 @@
     "react-toastify": "^9.1.2",
     "reflect-metadata": "^0.1.13",
     "sass": "^1.62.1",
+    "swiper": "^12.0.1",
     "tsyringe": "^4.7.0"
   },
   "devDependencies": {

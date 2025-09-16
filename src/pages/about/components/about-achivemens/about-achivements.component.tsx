@@ -2,7 +2,6 @@ import Spline from '@splinetool/react-spline';
 import {useAboutAchivementStyles} from './about-achivements.style';
 import useLocalization from '../../../../assets/lang';
 
-
 const AboutAchivementsComponent = () => {
     const classes = useAboutAchivementStyles();
     const translate = useLocalization();
