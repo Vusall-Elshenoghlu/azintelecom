@@ -25,7 +25,7 @@ const FooterProudComponent = () => {
                 <div className={classes.line}></div>
 
                 <div className={'row'}>
-                    <div className={'col-lg-4 col-md-6 col-sm-6'}>
+                    <div className={'col-lg-4 col-md-6 col-sm-6 col-6'}>
                         <h5 className={classes.menuTitle}>{translate('footer_media')}</h5>
                         <div className={'row'}>
                             <div className={'col-lg-6 col-md-12 col-sm-6'}>
@@ -46,7 +46,7 @@ const FooterProudComponent = () => {
                         </div>
                     </div>
 
-                    <div className={'col-lg-8 col-md-6 col-sm-6'}>
+                    <div className={'col-lg-8 col-md-6 col-sm-6 col-6'}>
                         <div className={'row'}>
                             <div className={'col-lg-6 col-md-6 col-sm-12'}>
                                 <div className={classes.contactInfo}>
