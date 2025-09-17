@@ -14,11 +14,7 @@ const commonStyles = {
             fontWeight: 400,
             margin: 0,
             backgroundColor: colors.headerNavBg,
-            backgroundImage: `url(${background})`,
             width: '100%',
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat',
-            backgroundAttachment: 'fixed',
             minHeight: '100vh',
             padding:rem(15),
             [breakpoint(breakpoints.tabletM)]: {
