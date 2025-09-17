@@ -19,6 +19,7 @@ const colors = {
     textGrayColor9: '#121926',
     textGrayColor1: '#EEF2F6',
     textGrayColor2: '#E3E8EF',
+    textGrayColor50: '#F8FAFC',
     modernBlue1: '#D0E2FF',
     modernBlue5: '#0F62FE',
     mainBg: '#edeef1',

@@ -46,7 +46,21 @@ const styles = {
             '&::before': {
                 borderRadius: rem(16),
             }
-        }
+        },
+
+    },
+    menuTitle: {
+      display: 'none',
+      [breakpoint(breakpoints.tabletM)]: {
+          display: 'block',
+          fontWeight: '400',
+          fontSize: rem(12),
+          lineHeight: rem(18),
+          color: colors.textGrayColor5,
+          marginBottom: rem(15),
+          marginLeft: rem(15),
+
+      }
     },
 
     title: {
@@ -60,8 +74,9 @@ const styles = {
             lineHeight: rem(50),
         },
         [breakpoint(breakpoints.tabletM)]: {
-            fontSize: rem(28),
-            lineHeight: rem(40),
+            fontSize: rem(24),
+            lineHeight: rem(32),
+            textAlign: 'left',
         },
         [breakpoint(breakpoints.mobileL)]: {
             fontSize: rem(24),
@@ -110,7 +125,15 @@ const styles = {
         [breakpoint(breakpoints.mobileL)]: {
             fontSize: rem(14),
             lineHeight: rem(20),
-        }
+        },
+        [breakpoint(breakpoints.tabletM)]: {
+            fontSize: rem(16),
+            lineHeight: rem(22),
+            fontWeight: '600',
+            letterSpacing: '0%',
+            marginLeft: rem(15),
+        },
+
     },
 
     contactInfo: {
@@ -140,7 +163,11 @@ const styles = {
         [breakpoint(breakpoints.mobileL)]: {
             fontSize: rem(18),
             marginRight: rem(10),
-        }
+        },
+        [breakpoint(breakpoints.tabletM)]: {
+            display: 'none',
+        },
+
     },
 
     contactText: {
@@ -150,10 +177,7 @@ const styles = {
             fontSize: rem(14),
             lineHeight: rem(20),
             margin: 0,
-            [breakpoint(breakpoints.mobileL)]: {
-                fontSize: rem(13),
-                lineHeight: rem(18),
-            }
+
         },
         '& a': {
             fontSize: rem(18),
@@ -219,9 +243,15 @@ const styles = {
         marginBottom: rem(8),
         opacity: 0.8,
         [breakpoint(breakpoints.mobileL)]: {
-            fontSize: rem(13),
+            fontSize: rem(14),
             marginBottom: rem(6),
-        }
+        },
+        [breakpoint(breakpoints.tabletM)]: {
+            fontSize: rem(14),
+            marginBottom: rem(6),
+            marginTop: rem(-15),
+        },
+
     },
 
     emailLink: {

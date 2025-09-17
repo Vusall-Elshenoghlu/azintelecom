@@ -1,6 +1,5 @@
 import useLocalization from '../../../../../../../assets/lang';
 import {useFooterProudStyles} from './footer-proud.style';
-import {PhoneFooterIcon} from '../../../../../../../assets/images/icons/arrows';
 import {
     CallingIcon,
     FacebookIcon,
@@ -97,7 +96,6 @@ const FooterProudComponent = () => {
 
                 </div>
 
-                {/* Footer alt hissə */}
                 <div className={classes.footerBottom}>
                     <div className={'row'}>
                         <div className={'col-lg-6 col-md-6 col-sm-12'}>

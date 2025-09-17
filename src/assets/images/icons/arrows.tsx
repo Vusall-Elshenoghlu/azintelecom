@@ -47,12 +47,11 @@ export const ArrowLeft = () => {
 
 export const ArrowSmallLeft = () => {
     return (
-        <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
-            <path d='M8.01129 5.0332L3.04492 9.99957L8.01129 14.9659' stroke='white' stroke-width='1.5'
-                  stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/>
-            <path d='M16.9536 10H3.18359' stroke='white' stroke-width='1.5' stroke-miterlimit='10'
-                  stroke-linecap='round' stroke-linejoin='round'/>
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.7603 7.90668L4.66699 16L12.7603 24.0933" stroke="#CDD5DF" stroke-width="2.4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M27.3336 16H4.89355" stroke="#CDD5DF" stroke-width="2.4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
+
 
 
     );

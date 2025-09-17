@@ -14,16 +14,21 @@ export const useButtonStyles = createUseStyles({
         justifyContent: 'center',
     },
     primary: {
-        backgroundColor: colors.activeLiColor,
-        color: colors.main_bg_color,
-        borderRadius: rem(8),
+        backgroundColor: colors.textGrayColor2,
+        borderRadius: rem(100),
+        width: rem(134),
+        height: rem(34),
         display: 'flex',
-        gap: rem(6),
-
         justifyContent: 'center',
         alignItems: 'center',
+        gap: rem(6),
+
         border: 'none',
         cursor: 'pointer',
+        color: colors.textGrayColor8,
+        fontWeight: '400',
+        fontSize: rem(14),
+
 
     },
     secondary: {

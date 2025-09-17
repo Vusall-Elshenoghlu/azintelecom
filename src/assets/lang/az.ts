@@ -40,6 +40,12 @@ export const az = {
     home_advantages_biometric: 'Biometrik identifikasiya',
     home_advantages_safety: 'Təhlükəsizlik',
 
+    //HOmeProjects
+    home_projects_title: 'Layihələrimiz',
+    home_projects_description: 'Bütün layihələrə bax',
+    home_projects_description2: 'Lorem ipsum dolor sit amet consectetur. Massa at varius dolor in dui bibendum turpis. Massa bibendum et phasellus ultrices quis dolor mollis. Bibendum porttitor augue commodo',
+
+
 
 
 

@@ -18,7 +18,7 @@ const Button: React.FC<IButtonProps> = ({children, variant = 'primary', size = '
             disabled={disabled || loading}
             {...props}
         >
-            {loading ? translate('products_loading') : children}
+            {loading ? translate('loading') : children}
         </button>
     );
 };
