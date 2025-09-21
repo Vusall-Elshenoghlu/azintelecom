@@ -21,7 +21,7 @@ const AboutPriorietsComponent = () => {
         },
 
     ];
-    const handleDotClick = (index) => {
+    const handleDotClick = (index: any) => {
         if (index !== currentSlide && !isAnimating) {
             setIsAnimating(true);
 
@@ -37,7 +37,7 @@ const AboutPriorietsComponent = () => {
                 <TitleOfSectionComponent line title={translate('about_prioriets_title')}
                                          description={translate('about_prioriets_description')}/>
 
-                <div className={'row mt-100'}>
+                <div className={`row ${classes.row}`}>
                     <div className={'col-lg-4 col-md-6 col-sm-12'}>
                         <div className={classes.leftDiv}>
                             <div className={`${classes.leftDivContent} ${isAnimating ? classes.fadeOut : classes.fadeIn}`}>

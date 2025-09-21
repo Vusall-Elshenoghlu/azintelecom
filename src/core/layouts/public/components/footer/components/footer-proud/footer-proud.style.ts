@@ -74,14 +74,18 @@ const styles = {
             lineHeight: rem(50),
         },
         [breakpoint(breakpoints.tabletM)]: {
-            fontSize: rem(24),
+            fontSize: rem(20),
             lineHeight: rem(32),
             textAlign: 'left',
+            marginLeft: rem(15),
+
         },
         [breakpoint(breakpoints.mobileL)]: {
-            fontSize: rem(24),
+            fontSize: rem(20),
             lineHeight: rem(32),
-            textAlign: 'center',
+            textAlign: 'left',
+            marginLeft: rem(15),
+
         }
     },
 
@@ -272,14 +276,12 @@ const styles = {
         }
     },
 
-    // Sosial media
     socialMedia: {
         display: 'flex',
         alignItems: 'center',
         gap: rem(16),
-        [breakpoint(breakpoints.mobileL)]: {
-            gap: rem(12),
-            justifyContent: 'center',
+        [breakpoint(breakpoints.tabletM)]: {
+            display: 'none'
         }
     },
 
@@ -320,8 +322,14 @@ const styles = {
         paddingTop: rem(30),
         borderTop: `${rem(1)} solid ${colors.textGrayColor7}`,
         [breakpoint(breakpoints.tabletM)]: {
-            marginTop: rem(40),
+            marginTop: rem(20),
             paddingTop: rem(20),
+            display: 'flex',
+            flexDirection: 'column',
+            gap: rem(10),
+            justifyContent: 'center',
+            alignItems: 'center',
+
         },
         [breakpoint(breakpoints.mobileL)]: {
             marginTop: rem(30),
@@ -346,35 +354,34 @@ const styles = {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'flex-end',
-        [breakpoint(breakpoints.mobileL)]: {
-            justifyContent: 'center',
-        }
+        [breakpoint(breakpoints.tabletM)]: {
+            display: 'none',
+        },
+        gap: rem(10)
     },
 
     poweredText: {
         color: colors.white,
-        fontSize: rem(14),
-        opacity: 0.6,
+        fontSize: rem(15),
+        opacity: 0.5,
+        marginTop: rem(3),
         [breakpoint(breakpoints.mobileL)]: {
             fontSize: rem(12),
         }
     },
-
-    poweredLink: {
-        color: colors.white,
-        textDecoration: 'none',
-        fontSize: rem(14),
-        opacity: 0.8,
-        transition: 'opacity 0.3s ease',
-        '&:hover': {
-            opacity: 1,
-            color: colors.white,
-            textDecoration: 'none'
-        },
-        [breakpoint(breakpoints.mobileL)]: {
-            fontSize: rem(12),
+    socialMediaResponsive: {
+        display: 'none',
+        [breakpoint(breakpoints.tabletM)]: {
+            display: 'flex',
+            gap: rem(30),
+            '& div': {
+                width: rem(24),
+                height: rem(24),
+                marginTop: rem(20),
+            },
         }
     }
-};
+
+}as const;
 
 export const useFooterProudStyles = createUseStyles(styles);

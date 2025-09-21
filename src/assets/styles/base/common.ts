@@ -17,8 +17,12 @@ const commonStyles = {
             width: '100%',
             minHeight: '100vh',
             padding:rem(15),
+            overflowX: 'hidden',
             [breakpoint(breakpoints.tabletM)]: {
                 padding: rem(0),
+                margin: 0,
+                boxSizing: 'border-box',
+                overflowX: 'hidden',
             }
         },
         a: {textDecoration: 'none', '&:hover': {color: 'black',},},

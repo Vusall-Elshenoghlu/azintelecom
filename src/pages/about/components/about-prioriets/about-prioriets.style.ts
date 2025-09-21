@@ -12,8 +12,16 @@ const styles = {
         minHeight: rem(808),
         backgroundImage: `url(${background})`,
         backgroundSize: 'cover',
+        borderRadius: rem(48),
         [breakpoint(breakpoints.tabletM)]:{
             paddingTop: rem(50),
+            height: 'auto'
+        }
+    },
+    row: {
+        marginTop: rem(100),
+        [breakpoint(breakpoints.tabletM)]:{
+            marginTop: rem(10),
         }
     },
     leftDiv: {
@@ -91,6 +99,7 @@ const styles = {
         [breakpoint(breakpoints.tabletM)]:{
             width: 'auto',
             height: 'auto',
+            marginTop: rem(10),
         }
     },
     image: {

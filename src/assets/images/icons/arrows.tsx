@@ -11,12 +11,28 @@ export const ArrowDown = () => {
 export const ArrowRight = () => {
     return (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M16.5715 12C16.5715 11.7074 16.4595 11.4149 16.2367 11.192L9.37978 4.33513C8.93294 3.88829 8.21068 3.88829 7.76384 4.33513C7.317 4.78197 7.317 5.50423 7.76384 5.95107L13.8128 12H16.5715Z" fill="white"/>
-            <path d="M13.8128 12L7.76384 18.0489C7.317 18.4958 7.317 19.218 7.76384 19.6649C8.21068 20.1117 8.93294 20.1117 9.37978 19.6649L16.2367 12.808C16.4595 12.5851 16.5715 12.2926 16.5715 12H13.8128Z" fill="white"/>
+            <path
+                d="M16.5715 12C16.5715 11.7074 16.4595 11.4149 16.2367 11.192L9.37978 4.33513C8.93294 3.88829 8.21068 3.88829 7.76384 4.33513C7.317 4.78197 7.317 5.50423 7.76384 5.95107L13.8128 12H16.5715Z"
+                fill="white"/>
+            <path
+                d="M13.8128 12L7.76384 18.0489C7.317 18.4958 7.317 19.218 7.76384 19.6649C8.21068 20.1117 8.93294 20.1117 9.37978 19.6649L16.2367 12.808C16.4595 12.5851 16.5715 12.2926 16.5715 12H13.8128Z"
+                fill="white"/>
         </svg>
 
     );
 };
+export const ArrowToRight = () => {
+    return (
+        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 7H17M17 7L11 1M17 7L11 13" stroke="white" stroke-width="1.6" stroke-linecap="round"
+                  stroke-linejoin="round"/>
+        </svg>
+
+
+    );
+};
+
+
 export const ArrowSmallRight = () => {
     return (
         <svg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -38,8 +54,12 @@ export const ArrowSmallRight = () => {
 export const ArrowLeft = () => {
     return (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M7.42871 12C7.42871 12.2926 7.54071 12.5851 7.76356 12.808L14.6204 19.6649C15.0673 20.1117 15.7895 20.1117 16.2364 19.6649C16.6832 19.218 16.6832 18.4958 16.2364 18.0489L10.1874 12H7.42871Z" fill="#364152"/>
-            <path d="M10.1874 12L16.2364 5.95107C16.6832 5.50423 16.6832 4.78197 16.2364 4.33513C15.7895 3.88829 15.0673 3.88829 14.6204 4.33513L7.76356 11.192C7.54071 11.4149 7.42871 11.7074 7.42871 12H10.1874Z" fill="#364152"/>
+            <path
+                d="M7.42871 12C7.42871 12.2926 7.54071 12.5851 7.76356 12.808L14.6204 19.6649C15.0673 20.1117 15.7895 20.1117 16.2364 19.6649C16.6832 19.218 16.6832 18.4958 16.2364 18.0489L10.1874 12H7.42871Z"
+                fill="#364152"/>
+            <path
+                d="M10.1874 12L16.2364 5.95107C16.6832 5.50423 16.6832 4.78197 16.2364 4.33513C15.7895 3.88829 15.0673 3.88829 14.6204 4.33513L7.76356 11.192C7.54071 11.4149 7.42871 11.7074 7.42871 12H10.1874Z"
+                fill="#364152"/>
         </svg>
 
     );
@@ -48,10 +68,11 @@ export const ArrowLeft = () => {
 export const ArrowSmallLeft = () => {
     return (
         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12.7603 7.90668L4.66699 16L12.7603 24.0933" stroke="#CDD5DF" stroke-width="2.4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M27.3336 16H4.89355" stroke="#CDD5DF" stroke-width="2.4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12.7603 7.90668L4.66699 16L12.7603 24.0933" stroke="#CDD5DF" stroke-width="2.4"
+                  stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M27.3336 16H4.89355" stroke="#CDD5DF" stroke-width="2.4" stroke-miterlimit="10"
+                  stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
-
 
 
     );

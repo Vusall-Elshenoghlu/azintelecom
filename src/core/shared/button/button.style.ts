@@ -4,15 +4,10 @@ import {rem} from '../../../assets/styles/abstracts/functions';
 
 export const useButtonStyles = createUseStyles({
     base: {
-        border: 'none',
-        borderRadius: 6,
-        fontWeight: 600,
-        cursor: 'pointer',
-        transition: 'all 0.3s ease',
-        display: 'inline-flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
+        background: '#FFFFFF33',
+        backdropFilter: 'blur(20px)',
+
+},
     primary: {
         backgroundColor: colors.textGrayColor2,
         borderRadius: rem(100),

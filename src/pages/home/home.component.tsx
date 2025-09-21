@@ -2,6 +2,7 @@ import HeroSectionComponent from './components/hero-section/hero-section.compone
 import HomeOurActivitiesComponent from './components/home-our-activities/home-our-activities.component';
 import HomeAdvantagesComponent from './components/home-advantages/home-advantages.component';
 import HomeProjectsComponent from './components/home-projects/home-projects.component';
+import HomeNewsComponent from './components/home-news/home-news.component';
 
 function HomeComponent() {
 
@@ -11,6 +12,7 @@ function HomeComponent() {
             <HomeOurActivitiesComponent/>
             <HomeAdvantagesComponent/>
             <HomeProjectsComponent/>
+            <HomeNewsComponent/>
         </>
     );
 }

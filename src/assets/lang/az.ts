@@ -97,6 +97,17 @@ export const az = {
     about_prioriets_number: '01',
     about_prioriets_fact: 'FAKT',
     about_prioriets_fact_desc: 'IER III, ISO 20000, ISO 22301 və ISO 27001 sertifikatlı əlçatanlıq zonalarında 24/7 rejimində texniki dəstəyin göstərilməsi.',
+
+
+    //News
+    //News Hero
+
+    news_hero_title: 'Xəbərlər',
+    news_hero_date: '08 iyul 2024',
+    news_hero_heading: ' AZAL QSC informasiya sistemlərini tam şəkildə “Hökumət buludu”na köçürüb',
+    news_hero_tag: 'Lorem ipsum dolor sit amet consectetur. Lacus suspendisse in sit enim arcu aenean non dignissim. Diam porta nam rhoncus nibh.',
+    news_hero_expand: 'Ətraflı oxu',
+
     //Footer
 
     footer_logo_alt: 'Footer logo',
@@ -121,10 +132,17 @@ export const az = {
     footer_all_rights: 'All Rights Reserved',
     footer_terms: 'Terms and Conditions',
     footer_privacy: 'Privacy Policy',
+    footer_site: 'Sayt',
+    footer_azsoftware: 'azsoftware',
+    footer_by_developed: 'tərəfindən hazırlanmışdır',
+    //News
+    //News Main
+    news_main_title: 'Əsas xəbərlər',
 
 
     //FooterUsefulLinks
     footer_useful_title: 'Faydalı linklər',
     footer_proud_title1: `Qürur duyulacaq`,
     footer_proud_title2: `rəqəmsal gələcəyi birlikdə quraq`,
+    loading: 'yuklenir'
 };

@@ -1,16 +1,17 @@
 import useLocalization from '../../../../../../../assets/lang';
 import {useFooterProudStyles} from './footer-proud.style';
 import {
+    AzsoftWareIcon,
     CallingIcon,
     FacebookIcon,
     InstagramIcon, LinkedinIcon,
     LocationIcon
 } from '../../../../../../../assets/images/icons/footer-icons';
-
 const FooterProudComponent = () => {
     const translate = useLocalization();
     const classes = useFooterProudStyles();
-
+    const date = new Date().getFullYear();
+    console.log(date);
     return (
         <div className={classes.wrapper}>
             <div className={'container'}>
@@ -97,17 +98,22 @@ const FooterProudComponent = () => {
                 </div>
 
                 <div className={classes.footerBottom}>
+                    <div className={classes.socialMediaResponsive}>
+                        <div><FacebookIcon/></div>
+                        <div><InstagramIcon/></div>
+                        <div><LinkedinIcon/></div>
+                    </div>
                     <div className={'row'}>
                         <div className={'col-lg-6 col-md-6 col-sm-12'}>
                             <p className={classes.copyright}>
-                                2024 © Azintelecom. {translate('all_rights_reserved')}
+                                {date} © Azintelecom. {translate('footer_all_rights')}
                             </p>
                         </div>
                         <div className={'col-lg-6 col-md-6 col-sm-12'}>
                             <div className={classes.poweredBy}>
-                                <span className={classes.poweredText}>{translate('site')} </span>
-                                <a href='#' className={classes.poweredLink}>azsoftware</a>
-                                <span className={classes.poweredText}> {translate('by_developed')}</span>
+                                <span className={classes.poweredText}>{translate('footer_site')} </span>
+                                <AzsoftWareIcon/>
+                                <span className={classes.poweredText}> {translate('footer_by_developed')}</span>
                             </div>
                         </div>
                     </div>

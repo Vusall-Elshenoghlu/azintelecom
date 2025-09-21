@@ -2,7 +2,8 @@ import {createUseStyles} from 'react-jss';
 import {rem} from '../../../../assets/styles/abstracts/functions';
 import background from '../../../../assets/images/statics/home-advanteges-background.png';
 import colors from '../../../../assets/styles/abstracts/color';
-import {transition} from '../../../../assets/styles/abstracts/mixins';
+import {breakpoint, transition} from '../../../../assets/styles/abstracts/mixins';
+import {breakpoints} from '../../../../assets/styles/abstracts/sizes';
 
 const styles = {
     wrapper: {
@@ -14,11 +15,30 @@ const styles = {
         backgroundImage: `url(${background})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
+        [breakpoint(breakpoints.tabletM)]:{
+            height: 'auto',
+            paddingBottom: rem(50),
+            width: '100%'
+        }
     },
     row: {
         display: 'flex',
         flexWrap: 'wrap',
         marginLeft: rem(-15),
+        '@media (max-width: 768px)': {
+            flexWrap: 'nowrap',
+            overflowX: 'scroll',
+            marginLeft: 0,
+            paddingLeft: rem(15),
+            paddingRight: rem(15),
+            gap: rem(15),
+
+            '&::-webkit-scrollbar': {
+                display: 'none'
+            },
+            '-ms-overflow-style': 'none',
+            'scrollbar-width': 'none'
+        }
     },
     card: {
         width: '25%',
@@ -34,6 +54,16 @@ const styles = {
         position: 'relative',
         transition: transition('all', 0.5, 'ease'),
 
+        // Mobil üçün
+        '@media (max-width: 768px)': {
+            minWidth: rem(280), // Minimum genişlik
+            width: rem(280),    // Sabit genişlik
+            flexShrink: 0,      // Kiçilməməsi üçün
+            height: rem(400),   // Daha kiçik hündürlük
+            paddingLeft: rem(20),
+            gap: rem(15)
+        },
+
         '&::before': {
             content: '""',
             position: 'absolute',
@@ -42,9 +72,8 @@ const styles = {
             width: '0%',
             height: rem(200),
             background: 'radial-gradient(215.08% 100% at 100% 0%, #000000 14%, #335FEE 100%)',
-
             transform: 'translate(-50%, -50%)',
-            transition: transition('width', 0.6, 'ease'), // yalnız width animasiya olunur
+            transition: transition('width', 0.6, 'ease'),
             borderRadius: '10%',
             zIndex: 1,
         },
@@ -64,6 +93,11 @@ const styles = {
             transition: transition('all', 0.5, 'ease'),
             position: 'relative',
             zIndex: 2,
+
+            '@media (max-width: 768px)': {
+                width: rem(60),
+                height: rem(60)
+            }
         },
         '& h1': {
             fontWeight: '700',
@@ -73,6 +107,11 @@ const styles = {
             position: 'relative',
             zIndex: 2,
             transition: transition('color', 0.3, 'ease'),
+
+            '@media (max-width: 768px)': {
+                fontSize: rem(24),
+                lineHeight: rem(30)
+            }
         },
         '& p': {
             color: colors.textGrayColor7,
@@ -82,12 +121,16 @@ const styles = {
             position: 'relative',
             zIndex: 2,
             transition: transition('color', 0.3, 'ease'),
+
+            '@media (max-width: 768px)': {
+                fontSize: rem(14),
+                lineHeight: rem(22)
+            }
         },
 
         '&:hover': {
             color: colors.white,
 
-            // Pseudo-element hover zamanı genişlənir
             '&::before': {
                 width: '150%',
                 height: '150%',

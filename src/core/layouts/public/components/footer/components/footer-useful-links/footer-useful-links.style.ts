@@ -1,6 +1,8 @@
 import {createUseStyles} from 'react-jss';
 import {rem} from '../../../../../../../assets/styles/abstracts/functions';
 import colors from '../../../../../../../assets/styles/abstracts/color';
+import {breakpoint} from '../../../../../../../assets/styles/abstracts/mixins';
+import {breakpoints} from '../../../../../../../assets/styles/abstracts/sizes';
 
 const styles = {
     wrapper: {
@@ -15,11 +17,23 @@ const styles = {
             background: 'linear-gradient(90deg, #FFFFFF 0%, #697586 25.24%)',
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
+            [breakpoint(breakpoints.tabletM)]: {
+                fontWeight: '600',
+                fontSize: rem(24),
+                lineHeight: rem(32),
+                background: 'linear-gradient(90deg, #FFFFFF 27.6%, #9AA4B2 73.44%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                marginLeft: rem(100),
+            }
         }
     },
     arrows: {
         display: 'flex',
-        gap: rem(10)
+        gap: rem(10),
+        [breakpoint(breakpoints.tabletM)]: {
+            display: 'none',
+        }
     },
     arrowContainer: {
         width: rem(48),
@@ -38,12 +52,21 @@ const styles = {
         display: 'flex',
         flexDirection: 'column',
         gap: rem(20),
+        [breakpoint(breakpoints.tabletM)]: {
+            width: rem(280),
+            height: rem(132),
+        },
         backgroundColor: colors.textGrayColor9,
         '& h2': {
             fontWeight: '600',
             fontSize: rem(16),
             lineHeight: rem(22),
             color: colors.textGrayColor1,
+            [breakpoint(breakpoints.tabletM)]: {
+                fontWeight: '600',
+                fontSize: rem(14),
+                lineHeight: rem(20),
+            }
         }
     },
     logoAndTitle: {
@@ -51,9 +74,14 @@ const styles = {
         alignItems: 'center',
         gap: rem(6),
     },
-    logo: {
+
+    logoImage: {
         width: rem(80),
         height: rem(80),
+        [breakpoint(breakpoints.tabletM)]: {
+            width: rem(48),
+            height: rem(48),
+        }
     },
     linkAndIcon: {
         width: '100%',

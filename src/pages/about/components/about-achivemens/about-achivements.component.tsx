@@ -26,13 +26,15 @@ const AboutAchivementsComponent = () => {
             title: translate('about_achievements_sertificates'),
             count: translate('about_achievements_sertificates_count')
         },
-
     ];
+
     return (
         <div className={classes.wrapper}>
-            <div className='fixed inset-0 z-0'>
-                <Spline className={classes.spline}
-                        scene='https://prod.spline.design/xEov8w9BUQbdNLU3/scene.splinecode'/>
+            <div className={classes.splineWrapper}>
+                <Spline
+                    className={classes.spline}
+                    scene='https://prod.spline.design/xEov8w9BUQbdNLU3/scene.splinecode'
+                />
             </div>
             <div className={classes.mainDiv}>
                 <div className={'container'}>
@@ -47,20 +49,32 @@ const AboutAchivementsComponent = () => {
                             </div>
                         </div>
                     </div>
-                    <div className={classes.ballons}>
-                        {
-                            ballonList.map((ballon, index) => (
-                                <div className={`${classes.ballon} ${classes['ballon' + ballon.id]}`} key={ballon.id}>
-                                    <h1>{ballon.count}</h1>
-                                    <p>{ballon.title}</p>
-                                </div>
-                            ))
-                        }
 
+                    <div className={classes.ballons}>
+                        {ballonList.map((ballon, index) => (
+                            <div className={`${classes.ballon} ${classes['ballon' + ballon.id]}`} key={ballon.id}>
+                                <h1>{ballon.count}</h1>
+                                <p>{ballon.title}</p>
+                            </div>
+                        ))}
+                    </div>
+
+                    <div className={classes.mobileCards}>
+                        <div className={'row'}>
+                            {ballonList.map((item, index) => (
+                                <div className={'col-6'}>
+                                    <div className={classes.mobileCard} key={item.id}>
+                                        <h2>{item.count}</h2>
+                                        <p>{item.title}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     );
 };
+
 export default AboutAchivementsComponent;
