@@ -29,11 +29,12 @@ const HeaderNavbarComponent = () => {
     }, [locale]);
 
     const navLinks = [
-        {to: Routes.home, label: translate('navbar_home')},
         {to: Routes.about, label: translate('navbar_about')},
-        {to: Routes.products, label: translate('navbar_products')},
-        {to: Routes.partners, label: translate('navbar_partners')},
-        {to: Routes.contact, label: translate('navbar_contact')},
+        {to: Routes.products, label: translate('navbar_services')},
+        {to: Routes.products, label: translate('footer_media')},
+        {to: Routes.products, label: translate('navbar_career')},
+        {to: Routes.partners, label: translate('footer_account')},
+        {to: Routes.partners, label: translate('footer_contact')},
     ];
 
     return (

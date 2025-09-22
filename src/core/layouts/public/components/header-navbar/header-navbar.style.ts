@@ -5,15 +5,18 @@ import fonts from 'assets/styles/abstracts/fonts';
 import {breakpoint, transition} from '../../../../../assets/styles/abstracts/mixins';
 import {breakpoints} from '../../../../../assets/styles/abstracts/sizes';
 
-interface HeaderProps {
-    isProductDetail: boolean;
-}
+
 
 const styles = {
     headerSection: {
         backgroundColor: colors.headerNavBg,
-        position: 'relative',
+        position: 'fixed',
+        top: 0,
+        left: 0,
         width: '100%',
+        zIndex: 999,
+        backdropFilter: 'blur(10px)',
+        WebkitBackdropFilter: 'blur(10px)',
     },
 
     logoImg: {
@@ -45,7 +48,8 @@ const styles = {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        width: rem(599),
+        width: 'auto',
+        padding: rem(30),
         height: rem(68),
         borderRadius: rem(48),
         border: '1px solid rgba(255, 255, 255, 0.4)',
@@ -97,13 +101,34 @@ const styles = {
         color: colors.activeLiColor,
         fontFamily: fonts.mainFont,
         fontWeight: '400',
-        fontStyle: 'normal',
         fontSize: rem(15),
         textDecoration: 'none',
         padding: `${rem(8)} ${rem(16)}`,
         borderRadius: rem(4),
         transition: transition('all', 0.3, null),
         whiteSpace: 'nowrap',
+        position: 'relative',
+        '&:hover': {
+            color: colors.white, 
+        },
+
+        '&::after': {
+            content: "''",
+            position: 'absolute',
+            bottom: 0,
+            left: '50%',
+            transform: 'translateX(-50%)',
+            width: 0,
+            height: rem(2),
+            backgroundColor: colors.white,
+            color: colors.white,
+            borderRadius: rem(1),
+            transition: 'width 0.3s ease',
+        },
+
+        '&:hover::after, &.active::after': {
+            width: '100%',
+        },
 
         [breakpoint(breakpoints.laptopXL)]: {
             fontSize: rem(14),
@@ -320,6 +345,6 @@ const styles = {
             minHeight: rem(32),
         },
     },
-};
+}as const;
 
 export const useHeaderNavbarStyles = createUseStyles(styles);

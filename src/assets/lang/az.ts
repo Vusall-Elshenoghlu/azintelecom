@@ -5,7 +5,8 @@ export const az = {
     //Navbar
     navbar_home: 'Ana Səhifə',
     navbar_about: 'Haqqımızda',
-    navbar_contact: 'Əlaqə',
+    navbar_services: 'Xidmətlər',
+    navbar_career: 'Karyera',
     navbar_partners: 'Partnyorlar',
     navbar_products: 'Məhsullar',
 
@@ -45,6 +46,12 @@ export const az = {
     home_projects_description: 'Bütün layihələrə bax',
     home_projects_description2: 'Lorem ipsum dolor sit amet consectetur. Massa at varius dolor in dui bibendum turpis. Massa bibendum et phasellus ultrices quis dolor mollis. Bibendum porttitor augue commodo',
 
+    //Home News
+    home_news_title: 'Xəbərlər',
+    home_news_all_news: 'Bütün xəbərlərə bax',
+    home_news_all_description: '“Mobil notariat”a “SİMA İmza” ilə giriş imkanı yaradılıb lorem ipsum dolor sit amet',
+    home_news_date: '24 Aprel, 2024',
+    home_news_main_desc: 'Süni intellekt əsaslı “SİMA BOT” vətəndaşların, sahibkarların və dövlət qurumlarının istifadəsi üçün ictimaiyyətə təqdim olunub',
 
 
 
