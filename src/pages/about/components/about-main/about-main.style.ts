@@ -28,11 +28,11 @@ const styles = {
 
     homeDiv: {
         position: 'absolute',
-        top: rem(30),
-        left: rem(30),
+        top: '30%',
+        left: '40%',
         display: 'flex',
         alignItems: 'center',
-        gap: rem(8),
+        gap: rem(20),
         color: colors.textGrayColor4,
         fontSize: rem(14),
         [breakpoint(breakpoints.tabletM)]: {

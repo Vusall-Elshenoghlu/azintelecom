@@ -132,6 +132,34 @@ const styles = {
             opacity: '0.8'
         }
     },
+    ballon1: {
+        width: rem(290),
+        height: rem(290),
+        position: 'relative',
+        top: rem(-150),
+        left: rem(0),
+    },
+    ballon2: {
+        position: 'relative',
+        width: rem(360),
+        height: rem(360),
+        top: rem(0),
+        left: rem(-40),
+    },
+    ballon3: {
+        width: rem(312),
+        height: rem(312),
+        position: 'relative',
+        top: rem(-70),
+        left: rem(-50),
+    },
+    ballon4: {
+        position: 'relative',
+        width: rem(224),
+        height: rem(224),
+        top: rem(100),
+        left: rem(-80),
+    },
 
     // Mobile/Tablet version - cards
     mobileCards: {

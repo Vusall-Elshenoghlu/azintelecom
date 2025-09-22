@@ -1,6 +1,7 @@
 import Spline from '@splinetool/react-spline';
 import {useAboutAchivementStyles} from './about-achivements.style';
 import useLocalization from '../../../../assets/lang';
+import { motion } from 'framer-motion';
 
 const AboutAchivementsComponent = () => {
     const classes = useAboutAchivementStyles();
@@ -50,14 +51,20 @@ const AboutAchivementsComponent = () => {
                         </div>
                     </div>
 
-                    <div className={classes.ballons}>
+                    <motion.div
+                        className={classes.ballons}
+                        initial={{ opacity: 0, y: 100 }}       // əvvəlcə aşağıda gizli
+                        whileInView={{ opacity: 1, y: 0 }}     // scroll-da görünəndə yuxarı qalxır
+                        transition={{ duration: 0.8, ease: "easeOut" }} // hamar animasiya
+                        viewport={{ once: true, amount: 0.3 }} // bir dəfə işə düşsün, ekrana 30% girəndə
+                    >
                         {ballonList.map((ballon, index) => (
                             <div className={`${classes.ballon} ${classes['ballon' + ballon.id]}`} key={ballon.id}>
                                 <h1>{ballon.count}</h1>
                                 <p>{ballon.title}</p>
                             </div>
                         ))}
-                    </div>
+                    </motion.div>
 
                     <div className={classes.mobileCards}>
                         <div className={'row'}>
