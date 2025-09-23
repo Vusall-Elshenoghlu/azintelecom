@@ -20,13 +20,15 @@ const styles = {
 }
     },
     card: {
-        width: rem(344),
+        width: rem(350),
         height: rem(415),
         backgroundColor: colors.white,
         borderRadius: rem(28),
         display: 'flex',
         flexDirection: 'column',
         gap: rem(15),
+        marginTop: rem(15),
+        border: '1px solid #E3E8EF',
         '& h4': {
             color: colors.textGrayColor5,
             fontSize: rem(16),
@@ -35,17 +37,10 @@ const styles = {
             lineHeight: 1.4,
         },
         '& p': {
-            color: colors.descriptionColor,
-            fontSize: rem(14),
-            fontWeight: 'normal',
-            margin: 0,
-            lineHeight: 1.5,
-            flex: 1,
-        },
-        '& .date': {
             color: colors.textGrayColor8,
-            fontSize: rem(12),
-            marginTop: 'auto',
+            fontSize: rem(18),
+            fontWeight: '600',
+            marginLeft: rem(15)
         },
         [breakpoint(breakpoints.tabletM)]: {
             width: rem(300),
@@ -75,14 +70,17 @@ const styles = {
 
     },
     cardImage: {
-        width: rem(364),
+        width: '100%',
         height: rem(246),
-        borderRadius: rem(21),
+        borderRadius: `${rem(21)} ${rem(21)} 0 0`,
         objectFit: 'cover',
     },
     date: {
-        marginTop: '7%',
-        color: colors.mainGreen
+        fontSize: rem(16),
+        fontWeight: '400',
+        lineHeight: rem(24),
+        marginLeft: rem(15),
+        color: colors.textGrayColor7,
     },
     pagination: {
         marginTop: rem(40),

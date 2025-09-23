@@ -4,14 +4,14 @@ import secondBg from '../../../../assets/images/statics/hero-section-bg-lines.pn
 import {HomeMenuIcon, SmallLeftIcon} from '../../../../assets/images/icons/left-menu';
 import image from '../../../../assets/images/statics/news-hero-image.png';
 import Button from '../../../../core/shared/button/button.component';
-import {ArrowRight, ArrowSmallRight, ArrowToRight} from '../../../../assets/images/icons/arrows';
+import { ArrowToRight} from '../../../../assets/images/icons/arrows';
 const NewsHeroComponent = () => {
     const classes = useNewsHeroStyles();
     const translate = useLocalization();
     return (
         <div className={classes.wrapper}>
             <img src={secondBg} className={classes.secondBg} alt={translate('news_main_title')}/>
-            <div className={'container mt-50'}>
+            <div className={'container mt-150'}>
                 <div className={classes.homeDiv}>
                     <HomeMenuIcon/>
                     <SmallLeftIcon/>
