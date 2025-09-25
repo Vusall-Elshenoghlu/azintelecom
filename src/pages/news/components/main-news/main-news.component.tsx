@@ -35,13 +35,11 @@ const MainNewsComponent = () => {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
-    // Mətn və il filterlərini eyni vaxtda tətbiq etmək üçün useEffect
     useEffect(() => {
         if (!news) return;
 
         let filtered = news;
 
-        // Mətn filtri tətbiq et
         if (filter) {
             filtered = filtered.filter((item: INews) =>
                 item.description.toLowerCase().includes(filter.toLowerCase())
@@ -56,18 +54,17 @@ const MainNewsComponent = () => {
         }
 
         setDatas(filtered);
-        setCurrentPage(1); // Filterlədikdən sonra səhifəni yenidən 1-ə çevir
+        setCurrentPage(1);
     }, [news, filter, yearFilter]);
 
     const handleOnChangeEvent = useCallback((e: any) => {
         setFilter(e.target.value);
     }, []);
 
-    // Unikal illəri çıxarmaq üçün funksiya
     const getUniqueYears = useCallback(() => {
         if (!news) return [];
         const years = news.map((item: INews) => item.year);
-        return [...new Set(years)].sort((a, b) => b - a); // Azalan sıra ilə
+        return [...new Set(years)].sort((a, b) => b - a);
     }, [news]);
 
     const handleYearChange = (value: string) => {

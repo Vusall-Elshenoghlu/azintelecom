@@ -105,6 +105,10 @@ export const az = {
     about_prioriets_fact: 'FAKT',
     about_prioriets_fact_desc: 'IER III, ISO 20000, ISO 22301 və ISO 27001 sertifikatlı əlçatanlıq zonalarında 24/7 rejimində texniki dəstəyin göstərilməsi.',
 
+    //AboutSucces
+    about_success_title: 'Uğurlarımız',
+    about_success_decsription: 'Əldə etdiyimiz sertifikatlar',
+
 
     //News
     //News Hero

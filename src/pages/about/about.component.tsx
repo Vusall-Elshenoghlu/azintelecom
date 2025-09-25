@@ -4,6 +4,7 @@ import AboutStructureComponent from './components/about-structure/about-structur
 import AboutMainComponent from './components/about-main/about-main.component';
 import AboutMissionComponent from './components/about-mission/about-mission.component';
 import AboutPriorietsComponent from './components/about-prioriets/about-prioriets.component';
+import AboutSuccessComponent from './components/about-success/about-success.component';
 
 const AboutComponent = () => {
     return (
@@ -14,6 +15,7 @@ const AboutComponent = () => {
             <AboutStructureComponent/>
             <AboutMissionComponent/>
             <AboutPriorietsComponent/>
+            <AboutSuccessComponent/>
         </>
     );
 };
