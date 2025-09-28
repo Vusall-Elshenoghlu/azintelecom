@@ -27,7 +27,7 @@ const styles = {
 
     left: {
         width: rem(201.54),
-        height: rem(50.74),
+        height: '100%',
         marginLeft: rem(50),
 
         [breakpoint(breakpoints.mobileL)]: {
@@ -109,7 +109,7 @@ const styles = {
         whiteSpace: 'nowrap',
         position: 'relative',
         '&:hover': {
-            color: colors.white, 
+            color: colors.white,
         },
 
         '&::after': {

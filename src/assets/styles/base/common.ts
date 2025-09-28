@@ -20,6 +20,7 @@ const commonStyles = {
             overflowX: 'hidden',
             [breakpoint(breakpoints.tabletM)]: {
                 padding: rem(0),
+                paddingTop: rem(85),
                 margin: 0,
                 boxSizing: 'border-box',
                 overflowX: 'hidden',

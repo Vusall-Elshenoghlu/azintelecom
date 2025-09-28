@@ -3,14 +3,16 @@ import {rem} from '../../../assets/styles/abstracts/functions';
 import {breakpoint} from '../../../assets/styles/abstracts/mixins';
 import {breakpoints} from '../../../assets/styles/abstracts/sizes';
 import colors from '../../../assets/styles/abstracts/color';
+import {TitleOfSectionProps} from './title-of-section';
 
 const styles = {
     row: {
         width: '100%',
         height: '100%',
         display: 'flex',
+        alignItems: 'center',
     },
-    activitiesText: ({dark}: {dark?: boolean}) => ({
+    activitiesText: ({dark}: { dark?: boolean }) => ({
         fontWeight: '700',
         fontSize: rem(30),
         lineHeight: rem(56),
@@ -35,7 +37,12 @@ const styles = {
             WebkitTextFillColor: 'transparent',
         }
     }),
-    lineAndText: {
+    rightColumn: {
+        display: 'flex',
+        justifyContent: 'flex-end',
+        alignItems: 'center',
+    },
+    lineAndText: ({dark}: { dark?: boolean }) => ({
         width: 'auto',
         height: 'auto',
         marginLeft: 'auto',
@@ -48,7 +55,9 @@ const styles = {
             fontSize: rem(24),
             fontWeight: '400',
             lineHeight: rem(32),
-            background: 'linear-gradient(90deg, #121926 20.87%, #697586 52.17%)',
+            background: dark ?
+                'radial-gradient(56.96% 56.96% at 50% 59.38%, #FFFFFF 47%, #697586 100%)'
+                : 'radial-gradient(50% 50% at 50% 59.37%, #090909 0%, #616161 100%)',
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
             marginLeft: 'auto',
@@ -62,12 +71,12 @@ const styles = {
             gap: rem(0),
 
         }
-    },
+    }),
 
-    line: ({dark}: {dark?: boolean}) => ({
+    line: ({dark}: { dark?: boolean }) => ({
         height: rem(0),
         width: rem(130),
-        border: `${rem(1)} solid ${dark ? '#202939' : colors.textGrayClor8}`,
+        border: `${rem(1)} solid ${dark ? '#202939' : colors.textGrayColor8}`,
         marginLeft: 'auto',
         [breakpoint(breakpoints.tabletM)]: {
             width: rem(40),
@@ -76,8 +85,8 @@ const styles = {
         }
     }),
 
-    description: ({dark}: {dark?: boolean}) => ({
-        width: 'auto !important',
+    description: ({dark, underline}: TitleOfSectionProps) => ({
+        width: 'auto',
         fontWeight: '400',
         fontSize: rem(18),
         lineHeight: rem(28),
@@ -86,9 +95,11 @@ const styles = {
         verticalAlignment: 'middle',
         background: dark
             ? 'radial-gradient(56.96% 56.96% at 50% 59.38%, #FFFFFF 47%, #697586 100%)'
-            : 'background: radial-gradient(56.96% 56.96% at 50% 59.38%, #FFFFFF 47%, #697586 100%);\n',
+            : 'radial-gradient(278.27% 278.27% at -178.27% 100%, #111111 0%, #A5A5A5 100%)',
         WebkitBackgroundClip: 'text',
         WebkitTextFillColor: 'transparent',
+        textDecoration: underline ? 'underline' : 'none',
+        backgroundColor: 'red !important',
         marginLeft: 'auto',
     }),
 

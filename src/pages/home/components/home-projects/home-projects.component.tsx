@@ -75,7 +75,7 @@ const HomeProjectsComponent = () => {
         <div className={classes.wrapper}>
             <div className={'container'}>
                 <TitleOfSectionComponent title={translate('home_projects_title')}
-                                         description={translate('home_projects_description')}/>
+                                         description={translate('home_projects_description')} underline/>
 
                 <div className='row mt-50'>
                     <div className='col-lg-6 col-md-6 col-sm-12'>

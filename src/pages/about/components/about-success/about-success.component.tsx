@@ -41,46 +41,8 @@ const datas = [
         "date": "12 İyul 2021",
         "category": "İdarəetmə"
     },
-    {
-        "title": "\"AzInTelecom\" beynəlxalq keyfiyyət standartı ISO 9001:2015 üzrə sertifikatlaşdırıldı",
-        "date": "25 Fevral 2022",
-        "category": "İdarəetmə"
-    },
-    {
-        "title": "Şirkətin informasiya təhlükəsizliyi üzrə yeni siyasəti beynəlxalq auditdən uğurla keçdi",
-        "date": "30 Sentyabr 2023",
-        "category": "İdarəetmə"
-    },
-    {
-        "title": "\"AzInTelecom\" ilk dəfə olaraq müştəri məmnuniyyəti üzrə beynəlxalq mükafata layiq görüldü",
-        "date": "05 Noyabr 2021",
-        "category": "İdarəetmə"
-    },
-    {
-        "title": "ISO/IEC 20000-1:2018 üzrə sertifikatlaşdırma prosesi uğurla tamamlandı",
-        "date": "14 Yanvar 2024",
-        "category": "İdarəetmə"
-    },
-    {
-        "title": "\"AzInTelecom\" Microsoft ilə strateji tərəfdaşlıq müqaviləsi imzaladı",
-        "date": "09 İyun 2020",
-        "category": "İdarəetmə"
-    },
-    {
-        "title": "Şirkət kiberdayanıqlılıq sahəsində beynəlxalq səviyyədə mükafat qazandı",
-        "date": "18 Oktyabr 2022",
-        "category": "İdarəetmə"
-    },
-    {
-        "title": "\"AzInTelecom\" yeni Data Mərkəzinin tikintisi üçün beynəlxalq lisenziya əldə etdi",
-        "date": "27 Aprel 2019",
-        "category": "İdarəetmə"
-    },
-    {
-        "title": "Şirkət region üzrə \"Ən yaxşı Cloud Xidmət Təchizatçısı\" mükafatını aldı",
-        "date": "11 Avqust 2023",
-        "category": "İdarəetmə"
-    }
+
+
 ];
 
 const AboutSuccessComponent = () => {
@@ -96,24 +58,25 @@ const AboutSuccessComponent = () => {
                     <div className={classes.dataContainer}>
                         {
                             datas.map((data, index) => (
-                                <div key={index} className={classes.card}>
-                                    <div className={'d-flex justify-between'}>
-                                        <div className={classes.content}>
-                                            <h2>{data.title}</h2>
-                                            <div className={classes.buttons}>
-                                                <Button variant={'primary'} className={classes.button}><p>{data.date}</p></Button>
-                                                <Button variant={'primary'} className={classes.button}><p>{data.category}</p></Button>
+                                    <div key={index} className={classes.card}>
+                                        <div className={'d-flex justify-between'}>
+                                            <div className={classes.content}>
+                                                <h2>{data.title}</h2>
+                                                <div className={classes.buttons}>
+                                                    <Button variant={'primary'} className={classes.button}><p>{data.date}</p></Button>
+                                                    <Button variant={'primary'} className={classes.button}><p>{data.category}</p></Button>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div className={classes.imageAndIcon}>
-                                            <img src={image} className={classes.imageHover} alt={translate('about_success_title')}/>
-                                            <div className={classes.arrowDiv}>
-                                                <div className={classes.arrowRightIcon}><ArrowToRightAboutSuccess/></div>
-                                                <div className={classes.arrowRightUpIcon}><ArrowRightUp/></div>
+                                            <div className={classes.imageAndIcon}>
+                                                <img src={image} className={classes.imageHover} alt={translate('about_success_title')}/>
+                                                <div className={classes.arrowDiv}>
+                                                    <div className={classes.arrowRightIcon}><ArrowToRightAboutSuccess/></div>
+                                                    <div className={classes.arrowRightUpIcon}><ArrowRightUp/></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+
                             ))
                         }
                     </div>

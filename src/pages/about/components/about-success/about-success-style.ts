@@ -1,27 +1,23 @@
 import {createUseStyles} from 'react-jss';
 import {rem} from '../../../../assets/styles/abstracts/functions';
 import colors from '../../../../assets/styles/abstracts/color';
-import {transition} from '../../../../assets/styles/abstracts/mixins';
+import {breakpoint, transition} from '../../../../assets/styles/abstracts/mixins';
 import background from '../../../../assets/images/statics/footer-proud-bg.png';
+import {breakpoints} from '../../../../assets/styles/abstracts/sizes';
 const styles = {
     wrapper: {
         width: '100%',
-        height: rem(1214),
+        minHeight: rem(1214),
+        height: 'auto',
         border: '1px solid #36415266',
     },
     dataContainer: {
-        maxHeight: rem(810),
+        height: 'auto',
         marginTop: rem(40),
         width: '100%',
         overflowY: 'auto',
         paddingRight: '10px',
 
-        scrollbarWidth: 'none',
-        msOverflowStyle: 'none',
-
-        '&::-webkit-scrollbar': {
-            display: 'none'
-        },
     },
     card: {
         width: '100%',
@@ -35,6 +31,7 @@ const styles = {
         '&:hover': {
             paddingLeft: rem(20),
             paddingRight: rem(20),
+            border: 'none',
             '&::before': {
                 content: '""',
                 position: 'absolute',
@@ -65,6 +62,7 @@ const styles = {
         '&:hover $arrowDiv': {
             backgroundColor: `${colors.white} !important`,
             opacity: 1,
+            cursor: 'pointer',
         },
 
 
@@ -132,6 +130,34 @@ const styles = {
         display: 'block',
     },
 
-
+    [breakpoint(breakpoints.tabletM)]: {
+        card: {
+            flexDirection: 'column',
+            alignItems: 'flex-start',
+            height: 'auto',
+            padding: rem(20),
+            '& h2': {
+                fontSize: rem(18),
+                lineHeight: rem(26),
+            },
+        },
+        content: {
+            width: '100%',
+        },
+        imageAndIcon: {
+            width: '100%',
+            justifyContent: 'space-between',
+            gap: rem(20),
+            marginTop: rem(20),
+            flexDirection: 'row',
+        },
+        imageHover: {
+            width: '100%',
+            height: 'auto',
+        },
+        arrowDiv: {
+            marginTop: 0,
+        },
+    },
 };
 export const useAboutSuccessStyles = createUseStyles(styles);

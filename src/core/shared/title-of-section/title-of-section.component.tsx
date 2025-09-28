@@ -1,18 +1,18 @@
 import {useTitleOfSectionStyles} from './title-of-section.style';
 import {TitleOfSectionProps} from './title-of-section';
 
-const TitleOfSectionComponent = ({title, description, line, dark}: TitleOfSectionProps) => {
+const TitleOfSectionComponent = ({title, description, line, dark, underline}: TitleOfSectionProps) => {
     const classes = useTitleOfSectionStyles({dark});
     return (
         <div className={`row ${classes.row}`}>
             <div className={line ? 'col-lg-5 col-md-6 col-sm-12' : 'col-lg-6 col-md-6 col-sm-12'}>
                 <h1 className={classes.activitiesText}>{title}</h1>
             </div>
-            <div className={line ? 'col-lg-7 col-md-6 col-sm-12' : 'col-lg-6 col-md-6 col-sm-12'}>
+            <div className={`${line ? 'col-lg-7 col-md-6 col-sm-12' : 'col-lg-6 col-md-6 col-sm-12'} ${classes.rightColumn}`}>
                 {line ? (
                     <div className={classes.lineAndText}>
                         <div className={classes.line}></div>
-                        <h3 className={classes.description}>{description}</h3>
+                        <h3>{description}</h3>
                     </div>
                 ) : <h5 className={classes.description}>{description}</h5>
                 }
