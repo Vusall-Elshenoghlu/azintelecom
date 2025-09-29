@@ -11,9 +11,6 @@ import rinnLogo2 from '../../../../../../../assets/images/statics/footer-rinn-lo
 import rinnLogo3 from '../../../../../../../assets/images/statics/footer-rinn-logo3.png';
 import {ArrowLeft, ArrowRight} from '../../../../../../../assets/images/icons/arrows';
 import {
-    FooterRinnLogo,
-    FooterRinnLogo2,
-    FooterRinnLogo3,
     VisitLinkIcon
 } from '../../../../../../../assets/images/icons/footer-icons';
 

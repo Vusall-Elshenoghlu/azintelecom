@@ -2,18 +2,22 @@ import {createUseStyles} from 'react-jss';
 import bacground from 'assets/images/statics/home-news-bg.png';
 import {rem} from '../../../../assets/styles/abstracts/functions';
 import colors from '../../../../assets/styles/abstracts/color';
+import {breakpoint} from '../../../../assets/styles/abstracts/mixins';
+import {breakpoints} from '../../../../assets/styles/abstracts/sizes';
 
 const styles = {
     wrapper: {
         width: '100%',
         marginTop: rem(30),
         marginBottom: rem(15),
-        height: rem(984),
+        maxHeight: rem(984),
+        height: 'auto',
         borderRadius: rem(48),
         backgroundImage: `url(${bacground})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundColor: 'transparent',
+        overflow: 'hidden',
         '& h1': {
             fontSize: rem(40),
             fontWeight: '700',
@@ -81,9 +85,19 @@ const styles = {
         borderRadius: rem(24),
         backgroundColor: colors.textGrayColor8,
         display: 'flex',
+        [breakpoint(breakpoints.tabletM)]: {
+            height: rem(368),
+            width: rem(300),
+            display: 'flex',
+            flexDirection: 'column',
+        }
     },
     mapImage: {
-        borderRadius: '24px 0 0 24px'
+        borderRadius: '24px 0 0 24px',
+        [breakpoint(breakpoints.tabletM)]: {
+            borderRadius: '24px 24px 0 0',
+
+        }
     },
     rightDiv: {
         padding: rem(15),

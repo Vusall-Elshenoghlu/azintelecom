@@ -5,6 +5,7 @@ interface TitleOfSectionProps {
     description?: string;
     line?: boolean;
     dark? : boolean;
+    isIcon? : boolean;
     underline? : boolean;
     children?: React.ReactNode;
 }

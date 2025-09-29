@@ -1,7 +1,8 @@
 import {useTitleOfSectionStyles} from './title-of-section.style';
 import {TitleOfSectionProps} from './title-of-section';
+import {ArrowRight} from '../../../assets/images/icons/arrows';
 
-const TitleOfSectionComponent = ({title, description, line, dark, underline}: TitleOfSectionProps) => {
+const TitleOfSectionComponent = ({title, description, line, dark, isIcon, underline}: TitleOfSectionProps) => {
     const classes = useTitleOfSectionStyles({dark});
     return (
         <div className={`row ${classes.row}`}>
@@ -14,7 +15,7 @@ const TitleOfSectionComponent = ({title, description, line, dark, underline}: Ti
                         <div className={classes.line}></div>
                         <h3>{description}</h3>
                     </div>
-                ) : <h5 className={classes.description}>{description}</h5>
+                ) : <h5 className={classes.description}>{description} <span><ArrowRight/></span></h5>
                 }
             </div>
         </div>
