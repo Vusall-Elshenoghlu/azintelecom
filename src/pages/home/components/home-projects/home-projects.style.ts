@@ -77,6 +77,9 @@ const styles = {
     arrowContainer: {
         display: 'flex',
         gap: rem(16),
+        position: 'absolute',
+        right: 0,
+        bottom: rem(-16),
     },
     arrow: {
         cursor: 'pointer',

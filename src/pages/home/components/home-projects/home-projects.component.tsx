@@ -6,9 +6,14 @@ import {useRef, useState} from 'react';
 import {A11y, Navigation} from 'swiper/modules';
 import {Swiper as SwiperClass} from 'swiper';
 import {Swiper, SwiperSlide} from 'swiper/react';
-import {VisitLinkIcon} from '../../../../assets/images/icons/footer-icons';
 import Button from '../../../../core/shared/button/button.component';
-import {ArrowLeft, ArrowSmallLeft, ArrowSmallRight} from '../../../../assets/images/icons/arrows';
+import {
+    ArrowLeft,
+    ArrowSmallLeft,
+    ArrowSmallRight,
+    ArrowToLefts,
+    ArrowToRights
+} from '../../../../assets/images/icons/arrows';
 
 const projectsData = [
     {
@@ -134,14 +139,14 @@ const HomeProjectsComponent = () => {
                             className={classes.arrow}
                             onClick={prevSlide}
                         >
-                            <ArrowLeft/>
+                            <ArrowToLefts/>
                         </div>
                         <div
                             ref={nextRef}
                             className={classes.arrow}
                             onClick={nextSlide}
                         >
-                            <ArrowSmallRight/>
+                            <ArrowToRights/>
                         </div>
                     </div>
                 </div>
